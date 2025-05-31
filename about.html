@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Analyst Fresher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0a;
+      color: black;
+    }
+
+     header, footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #0a192f;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover{
+      background-color: black;
+      color: blue;
+      padding: 5px 10px 10px;
+    }
+    h1 {
+      color: whitesmoke;
+    }
+    .about-section {
+      max-width: 1200px;
+      margin: 2em auto;
+      padding: 2em;
+      background-color: ;
+      border-radius: 10px;
+      animation: slideUp 1.2s ease forwards;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+    }
+    .about-section p {
+      color: blue;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+
+     h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    img
+    { width: 600px;
+      height:auto;
+            border-radius: 10px;
+            float:initial;
+            margin: 0.3px;;
+    }
+    
+    .timeline {
+      position: relative;
+      margin: 40px 0;
+      padding-left: 30px;
+      border-left: 3px solid #00c9a7;
+      
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      bottom: 0;
+      width: 18px;
+    }
+
+    .timeline-item {
+      margin-bottom: 40px;
+      position: relative;
+      transition: transform 0.3s ease;
+       animation: slideUp 1.2s ease forwards; 
+         border-radius: 2%;
+  
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    
+    .timeline-item::before {
+      content: '';
+      padding:
+      position: absolute;
+      left: -12px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background: #00c9a7;
+      border-radius: 50%;
+      box-shadow: 0 0 0 4px rgba(0, 201, 167, 0.2);
+    }
+
+    .timeline-item h3 {
+      margin: 0;
+      font-size: 1.3rem;
+      color: #00c9a7;
+    }
+
+    .timeline-item span {
+      font-size: 0.9rem;
+      color: ;
+    }
+
+    .timeline-item p {
+      margin-top: 8px;
+      text-align: left;
+      color: #f1;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 40px 0;
+    }
+
+    .skill {
+      background: rgba(255,255,255,0.1);
+      background-color: darkgrey;
+      color: ;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-weight: 500;
+     transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.05);
+    }
+    }
+    .download-btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .download-btn a {
+      background: #00c9a7;
+      color: blue;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .download-btn a:hover {
+      background: #00a78f;
+    }
+    footer{
+      background-color: darkgrey;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .container { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+   <header  style="background-image: url('images/healthcare-business-concept.jpg'); background-size: cover;">
+
+    <h1>About Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  
+   <section class="about-section">
+     <div>
+       <h2>👋 About Me</h2>
+    <p>Hello! I'm <strong>Daraja Emmanuel</strong>, a recent graduate with a strong foundation in mathematics and computer science,data analytics, statistics, and business intelligence tools. I'm passionate about uncovering insights from data to support smarter decision-making.</p>
+    
+    <p>I’ve worked on academic and personal projects involving Excel dashboards, SQL queries, Python for data analysis and business inteligent tool(power bi).
+      I’m eager to apply these skills in real-world environments and grow as a professional analyst.</p>
+    
+    <p>I'm currently looking for opportunities where I can contribute to data-driven teams, solve complex problems, and learn from experienced professionals in the field.</p>
+ 
+       <img src="images/business-data-financial-figures-visualiser-graphic_31965-19845.avif" class="card-img-top" alt="Sales Dashboard">
+
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Excel</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">Python</div>
+      <div class="skill">Data Cleaning</div>
+      <div class="skill">Data Visualization</div>
+      <div class="skill">Critical Thinking</div>
+      <div class="skill">EDA</div>
+    </div>
+     </div>
+<div class="timeline">
+    <h2>Education Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Bachelor of Science in Mathematics and Computer Science </h3>
+        <span>2019 - 2023 | Taita Taveta University</span>
+        <p>Graduated with a focus on data analysis, research methods, and applied Mathematics. Completed coursework in data analytics, programming, and visualization tools.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Google Data Analytics </h3>
+        <span>2024 | </span>
+        <p>Completed an 8-course covering SQL, data cleaning, power Bi, Excel,python for data analysis ,data visualization and case-based data analysis projects.</p>
+      </div>
+    </div>
+
+    <h2>Project Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Billionaire Dataset Analysis</h3>
+        <span>2024</span>
+        <p>Used SQL, Excel, and Power BI to analyze Forbes Billionaires dataset. Built interactive dashboards to show insights by country, source, and age.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Sales Data Dashboard</h3>
+        <span>2024</span>
+        <p>Developed a sales dashboard in Power BI with key KPIs, monthly trends, and category insights. Practiced DAX formulas and data cleaning.</p>
+      </div>
+    </div>
+
+    <div class="download-btn">
+      <a href="Your-Resume.pdf" download>Download Resume</a>
+    </div>
+     </div>
+  </section>
+  <footer>
+    &copy; 2025 Daraja Emmanuel  — All rights reserved.
+  </footer>
+</body>
+</html>

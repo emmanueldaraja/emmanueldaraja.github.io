@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Analytics Portfolio | Your Name</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* RESET */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: black;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 2em;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+      background-color: blue;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 0.2em;
+      color: whitesmoke;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: red;
+    }
+
+    nav {
+      background: blue;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #ccd6f6 ;
+      font-weight: bold;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #64ffda;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+     color:  black;
+    }
+     p:hover{
+      background-color: whitesmoke;
+      padding: 5px 10px 10px;
+    }
+.projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      padding: 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .hero-card {
+      padding: 4em 2em;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: slideUp 1.5s ease forwards;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      opacity: 0;
+      background-color: #11;
+    }
+
+    .hero-card h2 {
+      font-size: 2.2em;
+      color: black;
+    }
+
+    .hero-card p {
+      margin-top: 1em;
+      font-size: 1.1em;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      color: blue;
+    }
+    img{ width: 450px;
+      height:auto;
+            border-radius: 10px;
+            float:initial;
+            margin: 0.3px;;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 2em;
+      padding: 0.75em 1.5em;
+      background-color: #64ffda;
+      color: #0a192f;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s ease;
+    }
+
+    .cta:hover {
+      background-color: #52d6ba;
+      color: blue;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      font-size: 0.9em;
+      color: black;
+      background-color: darkgray;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      .hero h2 {
+        font-size: 1.6em;
+      }
+      nav a {
+        margin: 0 0.5em;
+      }
+    }
+  </style>
+</head>
+<body>
+ <nav>
+  <div><h3><strong>Daraja the Analyst</strong></h3></div>
+   <div>
+   <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="about.html">About</a>
+     <a href="contact.html">Contact</a>
+   </div>
+</nav>
+<header  style="background-image: url('images/healthcare-business-concept.jpg'); background-size: cover;">
+  
+    <h1>Daraja Emmanuel </h1>
+        <h1> Data Analyst <br> Portfolio</h1>
+  <p>SQL • Python • Power BI • Excel <br>
+    Turning Data Into Decisions. One Insight at a Time.</p>
+   
+  </header>
+ <main class="projects-container">
+  
+    <div class="hero-card" style="animation-delay: 0.2s;">
+
+    <h2>Welcome to My  Data Analytics Portfolio</h2>
+    <p>
+      Explore case studies, interactive dashboards, and real-world data stories. This is where data meets insight—and where insight drives decisions.
+    </p>
+      <div>
+      <img src="/images/istockphoto-487770307-612x612.jpg" class="card-img-top" alt="Sales Dashboard">
+      <p>interactive dashbords using<br>SQL and Excel and power bi</p>
+      </div>
+    <a href="project.html" class="cta">View Projects</a>
+  </div>
+   
+       <div class="hero-card" style="animation-delay: 0.2s;">
+
+  <h3>📚 WHAT I CAN DO</h3>
+
+  <div class="case">
+    <h3>📈 Churn Analysis with Python</h3>
+    <div class="card h-100">
+        <img src="/images/images.jpg" class="card-img-top" alt="Sales Dashboard">
+    
+    <p>Learn how I used pandas and scikit-learn to model churn rates with 85% accuracy.</p>
+    <a href="https://github.com/yourusername/churn-prediction" target="_blank">Read More</a>
+    </div></div>
+
+  <div class="case">
+    <h3>📊 Sales Dashboard Deep Dive</h3>
+     <div class="dat">
+        <img src="/images/istockphoto-180806860-1024x1024.jpg" class="card-img-top" alt="Sales Dashboard">
+        
+    <p>An in-depth walkthrough of my Power BI dashboard development process.</p>
+    <a href="https://app.powerbi.com/yourlink" target="_blank">See Dashboard</a>
+    </div></div>
+</div>
+
+  </main>
+  <footer>
+    &copy; 2025 Daraja Emmanuel. Built with HTML + CSS.
+  </footer>
+
+</body>
+</html>

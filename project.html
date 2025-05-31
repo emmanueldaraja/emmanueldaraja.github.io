@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects | Data Analytics Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color:#0a;
+      color: black;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2em;
+      background-color:#0a192f;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background-color: #64ffda;
+      transition: width 0.3s ease-in-out;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    a:hover{
+      background-color: aqua;
+      color: blue;
+      padding: 5px 10px 10px;
+    }
+    
+    h1 {
+      color: white;
+      margin-bottom: 0.5em;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2em;
+      padding: 2em;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project-card {
+      background : whitesmoke;
+      border-radius: 10px;
+      padding: 1.5em;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    .project-card h3 {
+      color: green;
+      margin-bottom: 0.5em;
+    }
+
+    .project-card p {
+      color: darkblue;
+      font-size: 0.95em;
+    }
+    img{ width: 350px;
+      height:auto;
+            border-radius: 10px;
+            float:initial;
+            margin: 0.3px;
+    }
+
+    .tags {
+      margin-top: 1em;
+      font-size: 0.85em;
+      color: whitesmoke; 
+    }
+
+    .tags span {
+      background: #233554;
+      padding: 0.3em 0.7em;
+      border-radius: 20px;
+      margin-right: 0.5em;
+      display: inline-block;
+    }
+
+    .project-links {
+      margin-top: 1em;
+    }
+
+    .project-links a {
+      color: blue;
+      margin-right: 1em;
+      font-size: 0.9em;
+      text-decoration: none;
+    }
+
+    footer {
+      font-size: 0.9em;
+      color: black;
+      background-color: darkgray;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+       <header  style="background-image: url('images/healthcare-business-concept.jpg'); background-size: cover;">
+  
+    <h1>My Projects</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="projects-container">
+ <div class="project-card" style="animation-delay: 0.8s;">
+    <h3 class="project-title">1. Sales Dashboard (Power BI)</h3>
+            <img src="/images/istockphoto-477787611-612x612.jpg" class="card-img-top" alt="Sales Dashboard">
+          <p>Created an interactive dashboard for sales performance across regions, highlighting trends and top products.</p>
+     <div class="tags">
+        <span>SQL</span>
+        <span>excel</span>
+       <span>power bi</span>
+        <span>EDA</span>
+      </div>
+   <div  class="project-links"><a href="https://app.powerbi.com/view?id=YOUR_LINK_HERE" target="_blank">View Dashboard</a></div>
+      </div>
+          
+      <div class="project-card" style="animation-delay: 0.6s;">
+
+    <h3 class="project-title">2. Forbes Billionaires Analysis – Data Exploration & Insights</h3>
+        <img src="/images/download.jpg" class="card-img-top" alt="Sales Dashboard">
+        
+    <p>
+
+Objective: Analyze the Forbes Billionaires dataset to uncover trends, patterns, and correlations in the financial world. Gain insights into wealth distribution, industries, geography, and other attributes.
+.</p>
+    <div class="tags">
+        <span>excel</span>
+        <span>poewr bi</span>
+        <span>EDA</span>
+      </div>
+        
+        <div  class="project-links"><a href="https://github.com/yourusername/churn-prediction" target="_blank">View Dashboad</a></div>
+  </div>
+    
+    <div class="project-card" style="animation-delay: 0.6s;">
+
+    <h3 class="project-title">3. Customer Churn Prediction (Python)</h3>
+        <img src="/images/download.jpg" class="card-img-top" alt="Sales Dashboard">
+        
+    <p>Used pandas, scikit-learn, and logistic regression to predict churn with 85% accuracy.</p>
+    <div class="tags">
+        <span>python</span>
+        <span>Retail</span>
+        <span>EDA</span>
+      </div>
+        
+        <div  class="project-links"><a href="https://github.com/yourusername/churn-prediction" target="_blank">View GitHub Repo</a></div>
+  </div>
+
+      <div class="project-card" style="animation-delay: 0.6s;">
+
+    <h3 class="project-title">4. Marketing Campaign Analysis (SQL)</h3>
+        <img src="/images/business-data-financial-figures-visualiser-graphic_31965-19845.avif" class="card-img-top" alt="Sales Dashboard">
+        
+     <div class="card h-100">
+      </div>
+    <p>Analyzed campaign data to uncover conversion trends and customer behavior using SQL queries.</p>
+     <div class="tags">
+        <span>SQL</span>
+        <span>Retail</span>
+        <span>EDA</span>
+      </div>
+        
+        <div  class="project-links"><a href="https://github.com/yourusername/sql-campaign-analysis" target="_blank">View SQL Project</a></div>
+  </div>
+
+
+    <div class="project-card" style="animation-delay: 0.2s;">
+      <h3>🏥  5.Hospital Readmission Prediction</h3>
+        <img src="/images/healthcare-business-concept.jpg" class="card-img-top" alt="Sales Dashboard">
+      
+      <p>Used XGBoost and SHAP to predict patient readmission risk, helping hospitals lower costs and improve care outcomes.</p>
+      <div class="tags">
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Healthcare</span>
+      </div>
+      <div class="project-links">
+        <a href="#">Code</a>
+        <a href="#">Dashboard</a>
+      </div>
+    </div>
+
+    <div class="project-card" style="animation-delay: 0.6s;">
+      <h3>📦 6.Inventory Optimization</h3>
+        <img src="/images/istockphoto-1317720381-612x612.jpg" class="card-img-top" alt="Sales Dashboard">
+      
+      <p>Reduced overstock by 23% using ABC analysis and SQL-based inventory segmentation strategies.</p>
+      <div class="tags">
+        <span>SQL</span>
+        <span>Retail</span>
+        <span>EDA</span>
+      </div>
+      <div class="project-links">
+        <a href="#">Code</a>
+        <a href="#">Case Study</a>
+      </div>
+    </div>
+
+       
+<div class="section">
+  <h2>📁 Tools & Skills</h2>
+        <img src="/images/data-analytics-tablet.jpg" class="card-img-top" alt="Sales Dashboard">
+  <ul>
+    <li>Languages: SQL, Python (Pandas, NumPy, Matplotlib)</li>
+    <li>BI Tools: Power BI, Tableau</li>
+    <li>Data: Excel, CSV, APIs, Relational Databases</li>
+    <li>Others: Git, Jupyter Notebooks, Data Cleaning & Visualization</li>
+  </ul>
+</div>
+  </main>
+
+  <footer>
+    &copy; 2025 Daraja Emmanuel — All rights reserved.
+  </footer>
+
+</body>
+</html>
