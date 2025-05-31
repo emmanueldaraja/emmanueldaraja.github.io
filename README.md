@@ -84,7 +84,7 @@ To access and explore the code on your local machine, clone the repository:
 bash
 Copy
 Edit
-git clone https://github.com/emmanuedaraja/data-analytics-portfolio.git
+git clone https://github.com/emmanueldaraja/emmanueldaraja.github.io 
 Browse the Projects:
 Each project is located in a separate folder. Inside the folder, you will find Jupyter Notebooks or Python scripts detailing the project workflow.
 
