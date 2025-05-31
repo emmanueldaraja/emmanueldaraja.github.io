@@ -1,10 +1,13 @@
 # emmanueldaraja.github.io
 Data Analytics Portfolio
+
+
 Welcome to my Data Analytics Portfolio! This repository contains all the work and projects that I have completed in the field of data analysis. Here, you will find a range of analytical techniques, including data cleaning, exploratory data analysis (EDA), statistical analysis, data visualization, and machine learning.
 
 Feel free to explore the individual projects, which are organized by topic.
 
 📊 About This Portfolio
+
 As a data analyst, I am passionate about leveraging data to derive meaningful insights and solve complex problems. This portfolio showcases my ability to collect, clean, and analyze data, as well as my proficiency in presenting those insights through interactive visualizations and reports.
 
 Here, you'll find the following:
